@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MoviesMafiaApp.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="MoviesMafia">
+
+    <ContentPage.Background>
+
+        <LinearGradientBrush EndPoint="1,0">
+            <GradientStop Offset="0.1" Color="#295270" />
+            <GradientStop Offset="1.0" Color="#524175" />
+        </LinearGradientBrush>
+
+    </ContentPage.Background>
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            VerticalOptions="Center">
+            <VerticalStackLayout Spacing="20">
+                <Image
+                    HorizontalOptions="Center"
+                    Source="logo.png"
+                    WidthRequest="200">
+                    <Image.Shadow>
+                        <Shadow
+                            Brush="#e3e4e9"
+                            Opacity="0.1"
+                            Offset="0.4,0.4" />
+                    </Image.Shadow>
+                </Image>
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="20"
+                    HorizontalOptions="Center"
+                    Text="Welcome to MoviesMafia"
+                    TextColor="#e3e4e9"
+                    VerticalOptions="Center"
+                    VerticalTextAlignment="Center" />
+            </VerticalStackLayout>
+            <VerticalStackLayout HorizontalOptions="Center" Spacing="10">
+                <Button
+                    BackgroundColor="#101420"
+                    Text="Sign Up"
+                    TextColor="#e3e4e9"
+                    WidthRequest="100">
+                    <Button.Shadow>
+                        <Shadow
+                            Brush="#e3e4e9"
+                            Opacity="0.1"
+                            Offset="0.4,0.4" />
+                    </Button.Shadow>
+                </Button>
+                <Button
+                    BackgroundColor="#101420"
+                    Text="Login"
+                    TextColor="#e3e4e9"
+                    WidthRequest="100">
+                    <Button.Shadow>
+                        <Shadow
+                            Brush="#e3e4e9"
+                            Opacity="0.1"
+                            Offset="0.4,0.4" />
+                    </Button.Shadow>
+                </Button>
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
